@@ -21,3 +21,5 @@
         <fileset dir="${eclipse}/lightbox"/>
     </copy>
 </project>
+
+<!-- http://firstphp.com/mygallery.php -->
