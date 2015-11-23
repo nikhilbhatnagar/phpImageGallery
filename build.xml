@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="build" default="" basedir=".">
+    <description>
+       Synchronize the Eclipse folders and the web site folders
+    </description>    
+    <!-- Relative location of eclipse folder -->
+    <property name="eclipse" value="/home/hduser/Downloads/workspace/phpImageGallery" />
+    <!-- Absolute location of web site folder -->
+    <property name="website" value="/var/www/firstphp.com/public_html/" />
+
+    <!-- Copy new Eclipse files -->
+    <copy todir="${website}">
+        <fileset file="${eclipse}/*.php"/>
+    	<fileset file="${eclipse}/*.js"/>
+    	<fileset file="${eclipse}/*.css"/>
+    </copy>
+    <copy todir="${website}/gallery">
+        <fileset dir="${eclipse}/gallery"/>
+    </copy>
+    <copy todir="${website}/lightbox">
+        <fileset dir="${eclipse}/lightbox"/>
+    </copy>
+</project>
