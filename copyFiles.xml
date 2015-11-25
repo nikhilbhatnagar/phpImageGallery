@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="build" default="" basedir=".">
+    <description>
+       Copy jpg from source to dest
+    </description>    
+    <property name="source" value="/home/hduser/Documents/Test/src" />
+    <property name="dest" value="/home/hduser/Documents/Test/dest/" />
+
+    <copy todir="${dest}">
+        <fileset dir="${source}"/>
+    </copy>
+</project>
+
+<!--
+
+This script will copy all files and folders (subfolder) from src to dest
+ 
+ -->
