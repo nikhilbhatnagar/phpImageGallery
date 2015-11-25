@@ -26,25 +26,8 @@
 include 'listFileFolder.php';
 
 $directory = $_GET['path'];
-/*
-echo '<table style="width: 50%;">';
-echo '	<thead>';
-echo '		<tr>';
-echo '			<td>#</td>';
-echo '			<td>Album Name</td>';
-echo '		</tr>';
-echo '	</thead>';
-echo '	<tbody>';
 
-	listFolder($directory);
-
-echo '	</tbody>';
-echo '</table>';
-
-
-echo '<br/><br/>';
-*/
-showFiles(@opendir($directory));
+showFiles(@opendir($directory), $directory);
 
 ?>
 	<div class="clear"></div>

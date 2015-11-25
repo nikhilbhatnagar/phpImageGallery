@@ -10,7 +10,7 @@
 
     <!-- Copy new Eclipse files -->
     <copy todir="${website}">
-        <fileset file="${eclipse}/mygallery.php"/>
+        <fileset file="${eclipse}/*.php"/>
     	<fileset file="${eclipse}/*.js"/>
     	<fileset file="${eclipse}/*.css"/>
     </copy>
@@ -21,9 +21,9 @@
         <fileset dir="${eclipse}/lightbox"/>
     </copy>
 	
-	<copy todir="/var/www/html/">
+	<!--copy todir="/var/www/html/">
 	    <fileset file="${eclipse}/gallery.php"/>
-	</copy>
+	</copy -->
 </project>
 
 <!-- http://firstphp.com/mygallery.php -->

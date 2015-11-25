@@ -25,6 +25,8 @@
 // This page will list all the folders (gallery) only. No image
 // Recomemded folder structure
 /*
+ * Images should be inside APACHE
+ * 
  * Pictures
  * 		Folder1
  * 			Image1
@@ -37,7 +39,8 @@
 
 include 'listFileFolder.php';
 
-$directory = '/home/hduser/Pictures';
+//$directory = '/home/hduser/Pictures';
+$directory = 'gallery';
 
 echo '<table style="width: 50%;">';
 echo '	<thead>';
@@ -57,10 +60,6 @@ echo '	<tbody>';
 
 echo '	</tbody>';
 echo '</table>';
-
-/*
-echo '<br/><br/>';
-showFiles(@opendir($directory));*/
 
 ?>
 	<div class="clear"></div>

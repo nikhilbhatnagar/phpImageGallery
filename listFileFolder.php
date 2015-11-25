@@ -20,7 +20,7 @@ function listFolder($dir){
 	}
 }
 
-function showFiles($dir_handle) {
+function showFiles($dir_handle, $dirPath) {
 	global $allowed_types;
 	global $file_parts;
 
@@ -43,9 +43,9 @@ function showFiles($dir_handle) {
 			if(($i+1)%4==0) $nomargin='nomargin';
 
 			echo '
-		<div class="pic '.$nomargin.'" style="background:url('.$dir_handle.'/'.$file.') no-repeat 50% 50%;">
-		<a href="'.$dir_handle.'/'.$file.'" title="'.$title.'" target="_blank">'.$title.'</a>
-		</div>';
+				<div class="pic '.$nomargin.'" style="background:url('.$dirPath.'/'.$file.') no-repeat 50% 50%;">
+					<a href="'.$dirPath.'/'.$file.'" title="'.$title.'" target="_blank">'.$title. '</a>
+				</div>';
 
 			$i++;
 		}

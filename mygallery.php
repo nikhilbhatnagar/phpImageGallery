@@ -23,7 +23,7 @@
 
 <?php
 
-$directory = 'gallery';
+$directory = 'gallery/Gallery1';
 
 $allowed_types=array('jpg','jpeg','gif','png');
 $file_parts=array();
